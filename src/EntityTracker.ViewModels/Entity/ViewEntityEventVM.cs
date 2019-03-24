@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityTracker.Dtos.Entity;
+using System;
 
 namespace EntityTracker.ViewModels.Entity
 {
@@ -6,5 +7,11 @@ namespace EntityTracker.ViewModels.Entity
     {
         public string ServiceId { get; set; }
         public DateTime CreatedOn { get; set; }
+
+        public ViewEntityEventVM(TrackedEntityEventDto trackedEntityEventDto)
+        {
+            ServiceId = trackedEntityEventDto.ServiceId;
+            CreatedOn = trackedEntityEventDto.CreatedOn;
+        }
     }
 }

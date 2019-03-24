@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EntityTracker.Dtos\EntityTracker.Dtos.csproj" />
+    <ProjectReference Include="..\EntityTracker.Interfaces\EntityTracker.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
