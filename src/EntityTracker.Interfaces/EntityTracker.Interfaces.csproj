@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DatabaseConnector\" />
+    <ProjectReference Include="..\EntityTracker.Models\EntityTracker.Models.csproj" />
   </ItemGroup>
 
 </Project>

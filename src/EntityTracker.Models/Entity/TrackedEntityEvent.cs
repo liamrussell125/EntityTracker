@@ -1,6 +1,6 @@
 ﻿namespace EntityTracker.Models.Entity
 {
-    public class EntityEvent
+    public class TrackedEntityEvent
     {
         public string ServiceId { get; set; }
     }

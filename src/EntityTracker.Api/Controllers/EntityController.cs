@@ -24,7 +24,7 @@ namespace EntityTracker.Api.Controllers
         [HttpPost("event")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> AddEntityEvent(CreateEntityVM createEntityVM)
+        public async Task<ActionResult> AddEntityEvent(CreateEntityEventVM createEntityVM)
         {
             var progressUrl = Url.RouteUrl("", new { entityId = "" });
             return Accepted(progressUrl);
